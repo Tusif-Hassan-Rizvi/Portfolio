@@ -81,6 +81,12 @@
     
 }
 
+.sorry{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding-top: 5px;
+}
+
 
 
 @media only screen and (max-width:600px){
