@@ -1,57 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tusif Hassan Rizvi-About</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tusif Hassan Rizvi | Frontend Engineer</title>
+  <meta name="description" content="Portfolio of Tusif Hassan Rizvi - Frontend Engineer with 3+ years of experience building scalable, responsive web applications using React.js, Next.js, and TypeScript.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="github.png">
 </head>
-
 <body>
 
-    <nav class="navbar">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#about" class="brand-name">Tusif Hassan Rizvi</a>
 
-        <ul>
-            <div class="contact">
-                <a href="mailto:tusifhassanrizvi@gmail.com" target="_blank"><img class="img-logo" class="gmail-size"
-                        src="gmail.png"></a>
-                <a href="https://www.linkedin.com/in/tusif-hassan-rizvi/" target="_blank"><img class="img-logo"
-                        class="linkedin-size" src="linkedin.png"></a>
-                <a href="https://github.com/Tusif-Hassan-Rizvi" target="_blank"><img class="github-size"
-                        src="github.png"></a>
-            </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
+      <div class="nav-socials">
+        <a href="mailto:tusifhassanrizvi@gmail.com" class="social-icon" title="Email" target="_blank">
+          <img src="gmail.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/tusif-hassan-rizvi/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Tusif-Hassan-Rizvi" class="social-icon" title="GitHub" target="_blank" rel="noopener noreferrer">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-
-            <span class="name"><a class="name-href" href="index.html">Tusif Hassan Rizvi</a></span>
-            <li><a class="li-href" href="index.html">About</a></li>
-            <li><a class="li-href" href="skills.html">Skills</a></li>
-            <!-- <li><a class="li-href" href="contact.html">Contact</a></li> -->
-        </ul>
-    </nav>
-    <div class="backgrond-img"></div>
-
-    <div class="container-home">
-
-        <div class="about-text">
-            <h1>Welcome,</h1>
-            <p>I am Tusif, a Self motivated IT professional with knowledge and
-               proficiency in HTML, CSS, JavaScript, Tailwind CSS,
-               MongoDB, Node.js ,git and C Programming Language,
-               seeks to apply for the position of Front-end Developer.</p>
+  <!-- ================= HERO / ABOUT SECTION ================= -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tagline">
+          <span class="pulse-dot"></span>
+          <span>Immediate Joiner · Open to work anywhere in India</span>
         </div>
 
+        <h1 class="hero-title">Frontend Engineer</h1>
+
+        <p class="hero-bio">
+          I am <strong>Tusif Hassan Rizvi</strong>, a Frontend Engineer with <strong>3+ years of experience</strong> building scalable, responsive, and high-performance web applications using <strong>React.js, Next.js, TypeScript, and Redux</strong>. Proven track record delivering production-grade projects for international clients including <strong>Optus Australia</strong> and <strong>Taco Bell India</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="Tusif Hassan Rizvi - Frontend Engineer.pdf" class="btn" download="Tusif Hassan Rizvi - Frontend Engineer.pdf">Download Resume</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>3+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3>7+</h3>
+            <p>Production Projects</p>
+          </div>
+          <div class="stat-item">
+            <h3>0 Days</h3>
+            <p>Notice Period</p>
+          </div>
+          <div class="stat-item">
+            <h3>10%</h3>
+            <p>Sales Lift Delivered</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="contact-cv">
-        <a href="Tusif.pdf" download="Tusif-Hassan-Rizvi">Download CV</a>
-        <a href="mailto:tusifhassanrizvi@gmail.com" target="_blank">Contact Me</a> 
+  </section>
 
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-tag">// Technical Expertise</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-desc">
+        Directly aligned with production engineering across modern frontend frameworks, 3D interactive graphics, backend APIs, and enterprise tooling.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="pill-container">
+            <span class="pill">React.js</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill"><img src="js.png" alt="JS"> JavaScript (ES6+)</span>
+            <span class="pill">Redux</span>
+            <span class="pill">Redux Toolkit</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Three.js</span>
+            <span class="pill"><img src="html.png" alt="HTML"> HTML5</span>
+            <span class="pill"><img src="css.png" alt="CSS"> CSS3</span>
+          </div>
+        </div>
+
+        <!-- Backend & APIs -->
+        <div class="skill-category">
+          <h3>Backend &amp; APIs</h3>
+          <div class="pill-container">
+            <span class="pill"><img src="node.png" alt="Node"> Node.js</span>
+            <span class="pill">Python</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Tools, 3D & Practices -->
+        <div class="skill-category">
+          <h3>Tools, 3D &amp; Engineering</h3>
+          <div class="pill-container">
+            <span class="pill"><img src="git.png" alt="Git"> Git &amp; GitHub</span>
+            <span class="pill">Unreal Engine</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Firebase</span>
+            <span class="pill">Keycloak (SSO)</span>
+            <span class="pill">Google Maps API</span>
+            <span class="pill">SEO Optimization</span>
+            <span class="pill">Cross-Browser Compatibility</span>
+            <span class="pill">Responsive Design</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- ================= WORK EXPERIENCE SECTION ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-tag">// Professional Journey</div>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-desc">
+        Delivering scalable frontend architectures and interactive applications across enterprise and fast-paced engineering teams.
+      </p>
 
+      <div class="experience-list">
+        <!-- Experience 1: Lyxel & Flamingo -->
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-role-company">
+              <h3>Frontend Engineer</h3>
+              <h4>Lyxel &amp; Flamingo (L&amp;F) · Gurugram, Haryana, India</h4>
+            </div>
+            <div class="exp-duration">October 2023 - September 2026</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed and scaled responsive web applications using React.js, Next.js, TypeScript, Redux, and Tailwind CSS, integrating robust REST APIs for multiple enterprise clients.</li>
+            <li>Built 3 internal dashboards for Optus Australia and a unified umbrella portal with Single Sign-On (SSO) using Keycloak, improving team operational efficiency.</li>
+            <li>Developed Taco Bell India web app (m.tacobell.co.in) using Next.js and Google Maps API, increasing online sales by 10% through improved user experience and checkout flow.</li>
+            <li>Collaborated with cross-functional teams to translate Figma designs into pixel-perfect, SEO-optimized interfaces across Android, iOS, and web platforms.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">React.js</span>
+            <span class="exp-tag">Next.js</span>
+            <span class="exp-tag">TypeScript</span>
+            <span class="exp-tag">Redux</span>
+            <span class="exp-tag">Tailwind CSS</span>
+            <span class="exp-tag">Keycloak (SSO)</span>
+            <span class="exp-tag">Google Maps API</span>
+            <span class="exp-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Experience 2: Ateerna Solutions -->
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-role-company">
+              <h3>Software Developer</h3>
+              <h4>Ateerna Solutions Private Limited · Bengaluru, Karnataka, India</h4>
+            </div>
+            <div class="exp-duration">November 2022 - June 2023</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built and maintained user interfaces using React.js, CSS, and Three.js, adding new features and resolving bugs across existing software products.</li>
+            <li>Contributed to a metaverse project using Unreal Engine and Blueprints to develop interactive 3D scenes and levels.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">React.js</span>
+            <span class="exp-tag">CSS3</span>
+            <span class="exp-tag">Three.js</span>
+            <span class="exp-tag">Unreal Engine</span>
+            <span class="exp-tag">Blueprints</span>
+            <span class="exp-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-tag">// Shipped Products</div>
+      <h2 class="section-title">Key Projects</h2>
+      <p class="section-desc">
+        Real-world commercial web applications, high-traffic consumer storefronts, and enterprise internal systems.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1: Taco Bell India -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Production · E-Commerce</span>
+            <h3>Taco Bell India - Web Application</h3>
+            <p class="project-desc">
+              Built full-featured ordering web app using Next.js, Redux Toolkit, TailwindCSS, and Google Maps API supporting delivery, takeaway, and dine-in modes. Integrated location module with Google Maps and Search API for delivery address and store finder functionality. Increased online sales by 10% through improved UX and seamless checkout flow.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">Redux Toolkit</span>
+              <span class="stack-tag">Tailwind CSS</span>
+              <span class="stack-tag">Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://m.tacobell.co.in" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live App (m.tacobell.co.in) →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Optus Australia (Confidential / Internal) -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge project-badge-internal">Enterprise · Internal Portal</span>
+            <h3>Optus Australia - Internal Dashboards &amp; Umbrella Portal</h3>
+            <p class="project-desc">
+              Developed 3 internal dashboards for device management and a unified umbrella portal using React.js, TypeScript, and Redux. Implemented Single Sign-On (SSO) using Keycloak enabling seamless authentication and operational workflows across all internal applications.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">Redux</span>
+              <span class="stack-tag">Keycloak (SSO)</span>
+            </div>
+            <div class="project-links">
+              <span class="btn btn-sm btn-disabled">Internal Enterprise Tool (Confidential)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Instalimb -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Production · HealthTech</span>
+            <h3>Instalimb Prosthetic Clinic</h3>
+            <p class="project-desc">
+              Modernized and revamped the clinic's digital web presence by migrating their legacy WordPress site into a high-performance Next.js and TypeScript application, delivering faster loading, type-safe architecture, and enhanced patient experience.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">Tailwind CSS</span>
+              <span class="stack-tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.instalimb.com/en/india/prosthetic-clinic" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live Platform →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Teacher Tracker -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Full-Stack · EdTech</span>
+            <h3>Teacher Tracker - School Management System</h3>
+            <p class="project-desc">
+              Built full-stack web app using React.js, Redux, Firebase Authentication, and Cloud Firestore with Admin and Teacher portals. Automated scheduling and attendance tracking, eliminating administrative errors and improving coordination efficiency.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">Redux</span>
+              <span class="stack-tag">Firebase Auth</span>
+              <span class="stack-tag">Cloud Firestore</span>
+            </div>
+            <div class="project-links">
+              <a href="https://test-teacher-tracker.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live Demo (Netlify) →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Druk Green Power Corporation -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Corporate · Web</span>
+            <h3>Druk Green Power Corporation</h3>
+            <p class="project-desc">
+              Built complete corporate website converting Figma designs into pixel-perfect, cross-browser compatible interfaces using HTML, CSS, JavaScript, and animations.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">CSS Animations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.drukgreen.bt" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live Website (drukgreen.bt) →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Artize -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Luxury Brand · Jaquar</span>
+            <h3>Artize - Premium Brand Website</h3>
+            <p class="project-desc">
+              Delivered premium website for Jaquar brand Artize using custom HTML, CSS, JavaScript, and animations with focus on high-end visual design and brand consistency.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Brand UI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.artize.com/in" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Live Website (artize.com/in) →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Ozokart -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-badge">E-Commerce · Web</span>
+            <h3>Ozokart Retail Platform</h3>
+            <p class="project-desc">
+              Developed interactive e-commerce shopping interfaces and product catalog views using HTML, CSS, JavaScript, and custom UI animations.
+            </p>
+          </div>
+          <div class="project-meta">
+            <div class="project-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">Animations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ozokart.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm">Platform Link →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION SECTION (Grad & Post-Grad Only) ================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-tag">// Academic Background</div>
+      <h2 class="section-title">Education</h2>
+      <p class="section-desc">
+        Higher education and professional credentials from recognized central and state universities.
+      </p>
+
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="edu-year">2021 - 2022</div>
+          <h3>Post Graduate Diploma in Computer Application (PGDCA)</h3>
+          <div class="edu-institution">Jamia Millia Islamia University, New Delhi</div>
+          <p class="edu-grade">Regular · CGPA: 8.13 · First Division with Distinction</p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-year">2016 - 2019</div>
+          <h3>Bachelor of Science (B.Sc.) in Zoology</h3>
+          <div class="edu-institution">Magadh University, Bodh Gaya, Bihar</div>
+          <p class="edu-grade">63% · First Division</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-tag">// Get In Touch</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-desc">
+        Feel free to reach out directly via call, WhatsApp, email, or LinkedIn. I am actively interviewing and available to join immediately.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info-list">
+          <a href="tel:+919122127624" class="contact-card">
+            <div class="contact-icon">
+              <span style="font-size: 1.2rem;">📞</span>
+            </div>
+            <div class="contact-details">
+              <h4>Phone &amp; WhatsApp</h4>
+              <p>+91 9122127624</p>
+            </div>
+          </a>
+
+          <a href="mailto:tusifhassanrizvi@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <img src="gmail.png" alt="Email">
+            </div>
+            <div class="contact-details">
+              <h4>Email Address</h4>
+              <p>tusifhassanrizvi@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/tusif-hassan-rizvi/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <img src="linkedin.png" alt="LinkedIn">
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn Profile</h4>
+              <p>linkedin.com/in/tusif-hassan-rizvi</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/Tusif-Hassan-Rizvi" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <img src="github.png" alt="GitHub">
+            </div>
+            <div class="contact-details">
+              <h4>GitHub Repositories</h4>
+              <p>github.com/Tusif-Hassan-Rizvi</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. name@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="Frontend Developer Opportunity" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn" style="width: 100%;">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-name">Tusif Hassan Rizvi</div>
+      <div class="footer-copy">
+        © 2026 Tusif Hassan Rizvi. All rights reserved.
+      </div>
+      <a href="#about" class="footer-top-btn">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    // Mobile navigation toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+
+    // Contact Form Handler: Generates direct mailto with clean fallback
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const subject = document.getElementById('contactSubject').value.trim();
+      const message = document.getElementById('contactMessage').value.trim();
+      const statusEl = document.getElementById('formStatus');
+
+      const bodyText = `Hi Tusif,%0D%0A%0D%0AMy Name: ${encodeURIComponent(name)}%0D%0AMy Email: ${encodeURIComponent(email)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+      const mailtoUrl = `mailto:tusifhassanrizvi@gmail.com?subject=${encodeURIComponent(subject)}&body=${bodyText}`;
+      
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#10b981';
+      statusEl.textContent = 'Opening your email client to send message to tusifhassanrizvi@gmail.com...';
+      
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 300);
+    }
+  </script>
 </body>
-<script src="../app.js"></script>
-
 </html>
